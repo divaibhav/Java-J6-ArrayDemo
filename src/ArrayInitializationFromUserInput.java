@@ -49,7 +49,20 @@ public class ArrayInitializationFromUserInput {
         double average = totalMarks / (double) marks.length;
         System.out.println("average = " + average);
 
+        // print marks available on odd index
+        for (int i = 0; i < marks.length; i++) {
+            if (i % 2 != 0) {
+                System.out.println(marks[i]);
+            }
+        }
+        // print only even marks
+        for (int i = 0; i < marks.length; i++) {
+            if (marks[i] % 2 == 0) {
+                System.out.println(marks[i]);
+            }
+        }
+
     }
-    // calculate total marks
+
 
 }
